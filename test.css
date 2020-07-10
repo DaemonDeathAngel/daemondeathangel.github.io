@@ -1,0 +1,82 @@
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.PageCont{
+	height: auto;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 71px auto 60px;
+	grid-template-areas:
+		"Header"
+		"Content"
+		"Footer";
+}
+
+.PageCont > div {
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+
+.Header{
+	grid-area: Header;
+	overflow: hidden;
+	background-color: #000;
+	position: fixed;
+	border-bottom: 2px solid rgb(8, 146, 208);
+	color: #FFF;
+	width: 100%;
+}
+
+.Content{
+	grid-area: Content;
+	background-color: #555;
+	color: #FFF;
+}
+
+.Footer{
+	grid-area: Footer;
+	background-color: #000;
+	border-top: 2px solid rgb(8, 146, 208);
+	color: #FFF;
+	width: 100%;
+}
+
+/* Start Navbar Stuff Here */
+
+.NavLink {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding-right: 14px;
+	padding-left: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.Logo {
+	height: 26px;
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.LogoBox {
+	float: left;
+}
+
+.NavLink:hover, .dropdown:hover .dropbtn {
+	background-color: #555;
+	border-radius: 5px;
+	color: white;
+}
